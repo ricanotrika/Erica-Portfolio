@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Erica Monton Portfolio</title>
+<meta name="description" content="Portfolio of Erica Monton: Askademic and Tugma case studies.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Great+Vibes&family=Jost:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="nav" aria-label="Main">
+  <a href="#home" data-nav="home">Home</a>
+  <a href="#skills" data-nav="skills">Skills</a>
+  <a href="#projects" data-nav="projects">Projects</a>
+  <a href="#contact" data-nav="contact">Contact</a>
+</nav>
+<div class="prog" id="prog" aria-hidden="true"></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <radialGradient id="pet" cx="50%" cy="78%" r="80%"><stop offset="0" stop-color="#c7335f"/><stop offset=".35" stop-color="#ee7f9f"/><stop offset="1" stop-color="#fbc4d2"/></radialGradient>
+    <symbol id="hibiscus" viewBox="0 0 200 200">
+      <g transform="translate(100 100)">
+        <g id="petal"><path d="M0 0 C-34 -18 -46 -66 -20 -88 C-6 -98 12 -96 22 -84 C46 -62 30 -18 0 0Z" fill="url(#pet)" stroke="#d65d86" stroke-width="1"/><path d="M0 -4 C-8 -30 -4 -58 -2 -76" fill="none" stroke="#b92f5e" stroke-opacity=".35" stroke-width="2"/></g>
+        <use href="#petal" transform="rotate(72)"/><use href="#petal" transform="rotate(144)"/><use href="#petal" transform="rotate(216)"/><use href="#petal" transform="rotate(288)"/>
+        <circle r="14" fill="#a7204d" fill-opacity=".85"/>
+        <path d="M0 0 C16 -20 30 -34 44 -58" fill="none" stroke="#f3d56a" stroke-width="5" stroke-linecap="round"/>
+        <g fill="#f1b434"><circle cx="44" cy="-58" r="5"/><circle cx="34" cy="-52" r="4.5"/><circle cx="52" cy="-48" r="4.5"/><circle cx="40" cy="-44" r="4"/></g>
+        <g fill="#c13a63"><circle cx="30" cy="-34" r="3"/><circle cx="24" cy="-26" r="3"/></g>
+      </g>
+    </symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3.5 6.5 12 13l8.5-6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-gh" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+    <symbol id="i-in" viewBox="0 0 24 24"><rect x="1" y="1" width="22" height="22" rx="4" fill="currentColor"/><path d="M5.200 9.500h2.800V18H5.200zM6.600 5.400a1.600 1.600 0 1 1 0 3.200 1.600 1.600 0 0 1 0-3.200zM10 9.500h2.600v1.200c.4-.7 1.300-1.400 2.700-1.400 2.800 0 3.300 1.800 3.300 4.200V18h-2.800v-4c0-1 0-2.200-1.400-2.200s-1.600 1-1.600 2.100V18H10z" fill="#fff"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 0c1 7 5 11 12 12-7 1-11 5-12 12-1-7-5-11-12-12 7-1 11-5 12-12Z" fill="currentColor"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 21C-2 11 4 1 12 7c8-6 14 4 0 14Z" fill="currentColor"/></symbol>
+  </defs>
+</svg>
+
+<!-- HOME -->
+<section class="view" id="home" aria-label="Home">
+  <div class="balus" aria-hidden="true">
+    <svg viewBox="0 0 1200 76" preserveAspectRatio="xMidYMid slice"><defs><pattern id="bal" width="47" height="76" patternUnits="userSpaceOnUse"><path d="M23.500 6 C29 6 30 11 27 15 C24 20 31 22 31 30 C31 40 26 41 26 46 C26 52 33 52 33 58 L33 70 L14 70 L14 58 C14 52 21 52 21 46 C21 41 16 40 16 30 C16 22 23 20 20 15 C17 11 18 6 23.500 6Z" fill="#fffdf1" stroke="#efe9cb" stroke-width="1"/></pattern></defs><rect width="1200" height="76" fill="url(#bal)"/><rect y="0" width="1200" height="5" fill="#e9e2bf"/></svg>
+  </div>
+  <h1 class="sr">Erica Monton</h1>
+  <div class="wrap home-grid">
+    <div class="polaroid"><img src="assets/img/askademic-logo-1.jpg" alt="Erica Monton smiling, in a pink gingham photo frame decorated with a butterfly, bows and tulips" width="312" height="380"></div>
+    <div class="about">
+      <button class="hello script" id="hello" type="button" aria-live="polite" title="Say hi back">Hello!</button>
+      <p>I am Erica Monton, a computer science student who is passionate about biology, data science and research. I am eager to gain experience in the field of biotechnology.</p>
+      <p>I approach every project with a problem-solving mindset, using existing algorithms to transform difficult problems into solvable ones.</p>
+      <p>My goal is to master my skills in data science and programming and excel in the field of bioinformatics.</p>
+      <h3>Relevant skills</h3><p class="v">Python · C++ · Google Colab · Jupyter Notebook</p>
+    </div>
+  </div>
+  <div class="wrap contact-row">
+    <div class="cl"><svg width="26" height="26"><use href="#i-mail"/></svg><button class="copy" type="button" data-copy="ma.ericapm@gmail.com" title="Copy email address">ma.ericapm@gmail.com</button></div>
+    <div class="cl"><svg width="26" height="26"><use href="#i-gh"/></svg><a href="https://github.com/ricanotrika" target="_blank" rel="noopener">github.com/ricanotrika</a></div>
+    <div class="cl"><svg width="26" height="26"><use href="#i-in"/></svg><a href="https://www.linkedin.com/in/erica-monton-421482338" target="_blank" rel="noopener">linkedin.com/in/erica-monton-421482338</a></div>
+  </div>
+  <div class="strip footstrip" aria-hidden="true"></div>
+</section>
+
+<!-- SKILLS -->
+<section class="view" id="skills" aria-label="Skills">
+  <div class="env-stage">
+    <div class="env" id="env">
+      <div class="back"></div>
+      <div class="paperclip"><div class="paper" id="paper">
+        <div class="tape"></div>
+        <div class="skills-tiles">
+          <button class="sk py" type="button" data-sk="py"><b>Py</b><small>PYTHON</small></button>
+          <button class="sk cp" type="button" data-sk="cp"><b>C++</b><small>C++</small></button>
+          <button class="sk co" type="button" data-sk="co"><b>Co</b><small>COLAB</small></button>
+          <button class="sk jp" type="button" data-sk="jp"><b>Jp</b><small>JUPYTER</small></button>
+        </div>
+        <div class="stk s-bio" data-stk>Bioinformatics</div>
+        <div class="stk s-gen" data-stk>Biology</div>
+        <div class="stk s-ds" data-stk><svg viewBox="0 0 100 100" aria-hidden="true"><polygon id="burst" fill="#f3b23a" stroke="#d8941d" stroke-width="1.5"/></svg><span>DATA<br>SCIENCE</span></div>
+        <div class="stk s-bpy" data-stk>Algorithms</div>
+        <div class="stk s-dc" data-stk>Programming</div>
+        <div class="stk s-res" data-stk>Research</div>
+        <div class="tip" id="tip" hidden role="status"></div>
+      </div></div>
+      <div class="flap"></div>
+      <div class="front"><i class="l"></i><i class="r"></i><i class="b"></i></div>
+      <button class="env-hit" id="envhit" type="button" aria-label="Open or close the envelope" aria-pressed="true"></button>
+    </div>
+    <span class="hint" id="envhint">tap a skill, drag the stickers, tap the envelope to close it</span>
+  </div>
+  <div class="corner-title script" aria-hidden="true">Software<small>AND</small>Skills</div>
+  <svg class="hib" style="right:max(10px,3vw);bottom:80px" viewBox="0 0 200 200" aria-hidden="true"><use href="#hibiscus"/></svg>
+  <div class="strip footstrip" aria-hidden="true"></div>
+  <h1 class="sr">Software and Skills</h1>
+</section>
+
+<!-- PROJECTS -->
+<section class="view" id="projects" aria-label="Projects">
+  <div class="nb-stage">
+    <div class="nb-title script">Projects</div>
+    <div class="nb">
+      <div class="pages">
+        <div class="pg">
+          <article class="postit pi1">
+            <h3>Askademic</h3>
+            <p>A campus-based system that allows student to instructor appoint consultation.</p>
+            <div class="links"><a class="cs-btn" href="#case-study">Read case study</a></div>
+          </article>
+          <div class="gingham">Tech Stack used: React + JSX build + vite + Supabase DB + lucide react + vercel</div>
+        </div>
+        <div class="pg">
+          <article class="postit pi2">
+            <h3>Tugma</h3>
+            <p>A community-based lost and found system that allows automatic matching of item reports using Levenshtein algorithm and rule-based algorithm.</p>
+            <div class="links"><a class="cs-btn" href="#case-study-tugma">Read case study</a></div>
+          </article>
+          <div class="gingham">Tech Stack used: HTML + CSS + Vanilla JS + Node.JS + Supabase</div>
+        </div>
+      </div>
+    </div>
+    <div class="nb-sub script">Case Studies</div>
+    <svg class="hib" style="right:-20px;top:-34px;width:clamp(90px,13vw,140px)" viewBox="0 0 200 200" aria-hidden="true"><use href="#hibiscus"/></svg>
+  </div>
+  
+  <h1 class="sr">Projects and case studies</h1>
+</section>
+
+<!-- CASE STUDY -->
+<section class="view cs-view" id="case-study" aria-label="Askademic case study">
+  <div class="wrap">
+    <header class="cs-head">
+      <div class="eyebrow">case study</div>
+      <h1 class="script">Askademic</h1>
+      <p class="tag">A web system where students request consultation slots, instructors approve them and record what happened, and the department can review how consultations go.</p>
+      
+    </header>
+    <div class="scene" id="scene" data-scene="ask" aria-label="Askademic shown on a laptop and a phone">
+      <div class="scene-in">
+        <div class="stage3d">
+          <div class="floor"></div>
+          <div class="laptop"><div class="lid"><i class="cam"></i><div class="scr"><img class="sa" alt="Askademic on a laptop"><img class="sb off" alt=""></div></div><div class="base"></div></div>
+          <div class="phone"><i class="isl"></i><div class="pscr"><img class="pa" alt="Askademic on a phone"></div></div>
+          <div class="appicon a"><img src="assets/img/askademic-logo-2.png" alt="Askademic app logo"></div>
+          <div class="appicon b"><img src="assets/img/askademic-logo-2.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+    <div class="tabs scene-tabs" role="tablist" aria-label="Screens shown on the devices">
+      <button class="tab" role="tab" aria-selected="true" data-scr="0" type="button">Sign in</button>
+      <button class="tab" role="tab" aria-selected="false" data-scr="1" type="button">Welcome</button>
+            <button class="tab" role="tab" aria-selected="false" data-scr="2" type="button">Calendar</button>
+    </div>
+    <p class="cap">Move your pointer over the devices to tilt them. Pick a tab to change the screen.</p>
+
+
+    <div class="cs-grid">
+      <nav class="toc" aria-label="Case study sections">
+        <a href="#cs-overview" data-t="cs-overview">Overview</a>
+        <a href="#cs-process" data-t="cs-process">Design thinking</a>
+        <a href="#cs-users" data-t="cs-users">Understanding users</a>
+        <a href="#cs-journey" data-t="cs-journey">Journey maps</a>
+        <a href="#cs-proto" data-t="cs-proto">First design</a>
+        <a href="#cs-usability" data-t="cs-usability">Usability study</a>
+        <a href="#cs-compare" data-t="cs-compare">Prototype to final</a>
+        <a href="#cs-screens" data-t="cs-screens">Final screens</a>
+        <a href="#cs-access" data-t="cs-access">Accessibility</a>
+        <a href="#cs-next" data-t="cs-next">Takeaways</a>
+      </nav>
+
+      <div>
+        <section class="sec" id="cs-overview">
+          <h2>Overview</h2>
+          <div class="two">
+            <div class="card">
+              <dl class="kv">
+                <dt>The product</dt><dd>Askademic is a web-based consultation system designed for college students to request appointment slots with faculty members. Instructors can approve requests and document the consultation details, while program chairs and department deans review student feedback and ratings. Overall, the platform streamlines student-instructor communication and enhances the consultation experience.</dd>
+                <dt>Duration</dt><dd>February 2026 to November 2026</dd>
+                <dt>Users</dt><dd>Students, instructors, program chairs, and department deans.</dd>
+                
+              </dl>
+            </div>
+            <div class="card">
+              <h3 style="margin-top:0">The problem</h3>
+              <p>Students can’t tell when an instructor is really available, instructors have no record of consultations that happened or didn’t, and the department has no evidence of how consultations go.</p>
+              <h3>The goal</h3>
+              <p>Make booking clear, close every consultation with a recorded outcome, and give the department a fair basis for evaluating instructors.</p>
+            </div>
+          </div>
+          <div class="card" style="margin-top:20px">
+            <h3 style="margin-top:0">My role</h3>
+            <p style="margin:0 0 6px"><b>Project lead, documentation lead, and design assistance.</b></p>
+            <ul class="tight" style="margin:0"><li>Assigned tasks to team members efficiently.</li><li>Monitored progress to ensure all standards and deliverables were met.</li><li>Led and guided the team across the project duration.</li></ul>
+          </div>
+          <div class="note" style="margin-top:20px">At our final defense the panel returned 13 critiques, and a follow-up round added more. Much of this case study is about how that feedback reshaped the system.</div>
+          <h3>What the team covered</h3>
+          <ul class="tight">
+            <li>User research: a survey and interviews with faculty members and students.</li>
+            <li>Role design: the student, instructor, program chair and department dean views.</li>
+            <li>Design: a first prototype, a revision round, and a refined, deployed system.</li>
+            <li>Documentation: use cases, class, sequence and state diagrams.</li>
+          </ul>
+        </section>
+
+        <section class="sec" id="cs-process">
+          <h2>Design thinking process</h2>
+          <p>We followed the five stages of design thinking. Pick a stage to see what we did there, what we found, and the decisions it led to.</p>
+          <div class="dts" role="tablist" aria-label="Design thinking stages">
+            <button class="dt" role="tab" aria-selected="true" data-dt="0" type="button"><i>1</i>Empathize</button>
+            <button class="dt" role="tab" aria-selected="false" data-dt="1" type="button"><i>2</i>Define</button>
+            <button class="dt" role="tab" aria-selected="false" data-dt="2" type="button"><i>3</i>Ideate</button>
+            <button class="dt" role="tab" aria-selected="false" data-dt="3" type="button"><i>4</i>Prototype</button>
+            <button class="dt" role="tab" aria-selected="false" data-dt="4" type="button"><i>5</i>Test</button>
+          </div>
+          <div class="card dtp" id="dtp"></div>
+        </section>
+
+        <section class="sec" id="cs-users">
+          <h2>Understanding the users</h2>
+          <h3 style="margin-top:0">User research: summary</h3>
+          <p>The team already assumed that our target users experienced the problem. To check, we ran a survey and interviews with the college’s faculty members and students. Once we had the data, the assumption became a confirmed hypothesis.</p>
+          <h3>User research: pain points</h3>
+          <div class="two">
+            <div class="pain"><span class="n">1</span><div><h4>Unclear availability for students</h4><p>Students can’t tell when an instructor is actually free, so they chase them through chat or the faculty room and often find no one there. Every screen shows real, bookable slots and clear request statuses, so a student never has to guess.</p></div></div>
+            <div class="pain"><span class="n">2</span><div><h4>Part-time instructors who can’t maintain a calendar</h4><p>Part-timers have little time to update their availability every day, which leaves schedules outdated and students distrustful of the system. Setting availability is quick and recurring by default, with the department’s blocked dates applied automatically so instructors only handle exceptions.</p></div></div>
+            <div class="pain"><span class="n">3</span><div><h4>No record of whether a consultation happened</h4><p>Without an outcome, the department has no evidence of how consultations go, and a no-show looks the same as a held session. Every appointment ends in a recorded outcome (“Closed · Held” or “Closed · No-show”), so nothing is left ambiguous.</p></div></div>
+            <div class="pain"><span class="n">4</span><div><h4>Leaders who are also instructors</h4><p>Program chairs and the department dean teach too, so one account has to act as both a manager and an instructor without conflicts of interest. A role switcher separates the two views, and ratings of a chair or the department dean route to the next level up.</p></div></div>
+          </div>
+          <h3>Personas</h3>
+          <div class="tabs" role="tablist" aria-label="Personas">
+            <button class="tab" role="tab" aria-selected="true" data-psn="0" type="button">Nilou, student</button>
+            <button class="tab" role="tab" aria-selected="false" data-psn="1" type="button">Albedo, instructor</button>
+            </div>
+          <div class="card persona" id="psn"></div>
+          
+        </section>
+
+        <section class="sec" id="cs-journey">
+          <h2>User journey maps</h2>
+          <p>We mapped one journey for each side of the booking. The curve is a rough guess of how the person feels at each step, and the last line of each step is the opportunity we turned into a feature.</p>
+          <div class="tabs" role="tablist" aria-label="Journey maps">
+            <button class="tab" role="tab" aria-selected="true" data-jm="0" type="button">Student: get a consultation</button>
+            <button class="tab" role="tab" aria-selected="false" data-jm="1" type="button">Instructor: run a consultation</button>
+          </div>
+          <div class="jm card"><div class="jm-in" id="jm"></div></div>
+        </section>
+
+        <section class="sec" id="cs-proto">
+          <h2>The first design</h2>
+          <p>This was our first prototype, then called FACS (Faculty Appointment and Consultation System). It had the full student booking flow, and it is what the final defense panel reviewed. Tap a screen to enlarge it.</p>
+          <div class="shots s3">
+            <figure class="shot"><button type="button" data-lb aria-label="Enlarge faculty directory"><img data-shot="p_dir" src="assets/img/p_dir.jpg" alt="Faculty directory listing instructors with next availability"></button><figcaption><b>Faculty directory</b>Students see every instructor, when they are next available, and a Book button.</figcaption></figure>
+            <figure class="shot"><button type="button" data-lb aria-label="Enlarge request appointment"><img data-shot="p_req" src="assets/img/p_req.jpg" alt="Request appointment dialog with a date picker"></button><figcaption><b>Request appointment</b>A seven-day picker shows how many slots are left each day.</figcaption></figure>
+            <figure class="shot"><button type="button" data-lb aria-label="Enlarge my appointments"><img data-shot="p_appts" src="assets/img/p_appts.jpg" alt="Appointments table with status filters"></button><figcaption><b>My appointments</b>A table of every request with a status badge and filters.</figcaption></figure>
+            <figure class="shot"><button type="button" data-lb aria-label="Enlarge appointment details"><img data-shot="p_det" src="assets/img/p_det.jpg" alt="Pending appointment details with cancel and reschedule"></button><figcaption><b>Appointment details</b>Pending requests can be rescheduled or cancelled until they start.</figcaption></figure>
+            <figure class="shot"><button type="button" data-lb aria-label="Enlarge declined with a reason"><img data-shot="p_dec" src="assets/img/p_dec.jpg" alt="Declined appointment showing the reason"></button><figcaption><b>Declined with a reason</b>The instructor’s reason and time of decision are shown to the student.</figcaption></figure>
+            <figure class="shot"><button type="button" data-lb aria-label="Enlarge instructor notifications"><img data-shot="p_notif" src="assets/img/p_notif.jpg" alt="Instructor notification panel"></button><figcaption><b>Instructor notifications</b>New requests, cancellations and waiting responses in one place.</figcaption></figure>
+          </div>
+        </section>
+
+        <section class="sec" id="cs-usability">
+          <h2>Usability study: findings</h2>
+          <p>We didn’t run lab sessions. Our usability studies were two rounds of review by the people who would judge and use the system: the final defense panel on May 8, 2026, and a follow-up from the faculty representative. Each round gave us concrete findings about how the design worked for real roles.</p>
+          <div class="two">
+            <div class="card"><h3 style="margin-top:0">Round 1: final defense panel</h3>
+              <div class="find"><span class="n">1</span><p><b>Several students can want the same last slot.</b> Students can now request it, and once the instructor approves one, the others are cancelled automatically.</p></div>
+              <div class="find"><span class="n">2</span><p><b>A no-show had no way to end a record.</b> Instructors can mark “No-show,” and “Completed” became “Closed” so it matches the remark chosen.</p></div>
+              <div class="find"><span class="n">3</span><p><b>The hierarchy wasn’t clear.</b> Program chairs were view-only and the department dean’s role was missing, so we built interfaces for both.</p></div>
+            </div>
+            <div class="card"><h3 style="margin-top:0">Round 2: faculty representative</h3>
+              <div class="find"><span class="n">1</span><p><b>Availability should be trackable per day.</b> The calendar now works like a familiar month view, with appointment counts per day and long names shortened with an ellipsis.</p></div>
+              <div class="find"><span class="n">2</span><p><b>A no-show needs a required note and clearer features.</b> The no-show flow is being tightened so the outcome is obvious to everyone.</p></div>
+              <div class="find"><span class="n">3</span><p><b>Records need limits and a way out.</b> Chairs and the department dean get Reports, and history limits and export are being finalized.</p></div>
+            </div>
+          </div>
+          <p class="sm">Smaller findings were fixed too: a blurred background behind dialogs, a subtle wave background, and a calmer, more polished sign in.</p>
+        </section>
+
+        <section class="sec" id="cs-compare">
+          <h2>From prototype to final</h2>
+          <p>After the revision round we refined the look and the logic. Each row puts the first design next to the system we deployed, with what changed and why.</p>
+          <div class="cmp">
+            <h3>Sign in</h3>
+            <div class="pair">
+              <figure class="shot"><button type="button" data-lb aria-label="Enlarge prototype sign in"><img data-shot="p_login" src="assets/img/p_login.jpg" alt="Prototype sign in with a Student and Faculty switch"></button><figcaption><b class="tagp">Prototype</b></figcaption></figure>
+              <figure class="shot"><button type="button" data-lb aria-label="Enlarge final sign in"><img data-shot="f_login_stu" src="assets/img/f_login_stu.jpg" alt="Final sign in showing a Student account badge"></button><figcaption><b class="tagf">Final</b></figcaption></figure>
+            </div>
+            <ul class="tight"><li>The Student and Faculty switch is gone. One form reads the account and shows a “Student account” or “Faculty account” badge.</li><li>One field for ID or email, a password reveal, and a Terms link in the footer.</li><li>A softer card on a calm background, so the logo and the form get the focus.</li></ul>
+          </div>
+          <div class="cmp">
+            <h3>Welcome</h3>
+            <div class="pair">
+              <figure class="shot"><button type="button" data-lb aria-label="Enlarge prototype welcome"><img data-shot="p_welcome" src="assets/img/p_welcome.jpg" alt="Prototype welcome page with quick guide"></button><figcaption><b class="tagp">Prototype</b></figcaption></figure>
+              <figure class="shot"><button type="button" data-lb aria-label="Enlarge final welcome"><img data-shot="f_welcome" src="assets/img/f_welcome.jpg" alt="Final welcome page with quick guide"></button><figcaption><b class="tagf">Final</b></figcaption></figure>
+            </div>
+            <ul class="tight"><li>Same four-step guide and policies, with larger type and more space so they are easier to read.</li><li>The sidebar gained About and Terms &amp; Policy, and Log Out is red to set it apart.</li><li>The signed-in student is shown with initials and program, and the bell shows an unread count.</li></ul>
+          </div>
+          <div class="cmp">
+            <h3>Student dashboard</h3>
+            <div class="pair">
+              <figure class="shot"><button type="button" data-lb aria-label="Enlarge prototype student dashboard"><img data-shot="p_dash_stu" src="assets/img/p_dash_stu.jpg" alt="Prototype student dashboard"></button><figcaption><b class="tagp">Prototype</b></figcaption></figure>
+              <figure class="shot"><button type="button" data-lb aria-label="Enlarge final student dashboard"><img data-shot="f_dash_stu" src="assets/img/f_dash_stu.jpg" alt="Final student dashboard with live availability"></button><figcaption><b class="tagf">Final</b></figcaption></figure>
+            </div>
+            <ul class="tight"><li>A new “Faculty you can consult today” row answers the first pain point directly: who is available, right now.</li><li>Empty states say what to do next, with a “Book one now” button.</li><li>The weekly strip starts from today, and the next consultation card keeps its place at the top.</li></ul>
+          </div>
+          <div class="cmp">
+            <h3>Instructor calendar</h3>
+            <div class="pair">
+              <figure class="shot"><button type="button" data-lb aria-label="Enlarge prototype instructor calendar"><img data-shot="p_cal_fac" src="assets/img/p_cal_fac.jpg" alt="Prototype instructor calendar"></button><figcaption><b class="tagp">Prototype</b></figcaption></figure>
+              <figure class="shot"><button type="button" data-lb aria-label="Enlarge final instructor calendar"><img data-shot="f_cal" src="assets/img/f_cal.jpg" alt="Final instructor calendar with institution closed dates"></button><figcaption><b class="tagf">Final</b></figcaption></figure>
+            </div>
+            <ul class="tight"><li>Institution-closed dates are shaded automatically, so part-time instructors don’t block them one by one.</li><li>An activity panel counts Approved, Pending, Declined, Closed, Cancelled and Follow-up. “Closed” replaced “Completed” after the no-show question.</li><li>Month navigation, a Today button, and past days dimmed so the future stands out.</li></ul>
+          </div>
+        </section>
+
+        <section class="sec" id="cs-screens">
+          <h2>Final screens</h2>
+          <p>More screens from the deployed system, plus the review views for program chairs and department deans. Tap to enlarge.</p>
+          <div class="shots">
+            <figure class="shot"><button type="button" data-lb aria-label="Enlarge faculty sign in"><img data-shot="f_login_fac" src="assets/img/f_login_fac.jpg" alt="Final faculty sign in"></button><figcaption><b>Faculty sign in</b>The badge changes to “Faculty account” as soon as the email is recognized.</figcaption></figure>
+            <figure class="shot"><button type="button" data-lb aria-label="Enlarge requests"><img data-shot="f_req" src="assets/img/f_req.jpg" alt="Requests screen with filters and search"></button><figcaption><b>Requests</b>Filter by pending, approved or history, and search by student, topic or note.</figcaption></figure>
+          </div>
+          <h3>Roles beyond the student and instructor</h3>
+          <p>The student rates the consultation, and the program chair and department dean review the results.</p>
+          <div class="shots">
+            <figure class="shot"><button type="button" data-lb aria-label="Enlarge faculty evaluation"><img data-shot="student_form" src="assets/img/student_form.jpg" alt="Faculty evaluation form over a blurred background"></button><figcaption><b>Faculty evaluation</b>After a held consultation, the student rates four areas from 1 to 5 and can add a comment.</figcaption></figure>
+            <figure class="shot"><button type="button" data-lb aria-label="Enlarge program chair view"><img data-shot="chair_ov" src="assets/img/chair_ov.jpg" alt="Program chair dashboard overview"></button><figcaption><b>Program chair view</b>Counts for one program, with tabs for appointments, reports, ratings and feedback.</figcaption></figure>
+            <figure class="shot"><button type="button" data-lb aria-label="Enlarge department dean overview"><img data-shot="dean_ov" src="assets/img/dean_ov.jpg" alt="Department dean dashboard overview"></button><figcaption><b>Department dean overview</b>System-wide counts, filters by program, and a ratings tab that flags items needing attention.</figcaption></figure>
+            <figure class="shot"><button type="button" data-lb aria-label="Enlarge account management"><img data-shot="dean_users" src="assets/img/dean_users.jpg" alt="Account management table of all users"></button><figcaption><b>Account management</b>Every user in one table, with role, status, join date and request count.</figcaption></figure>
+          </div>
+        </section>
+
+        <section class="sec" id="cs-access">
+          <h2>Accessibility considerations</h2>
+          <div class="three">
+            <div class="card"><h3 style="margin-top:0">Not color alone</h3><p style="font-size:15px">Status badges and calendar legends carry words as well as color: Pending, Approved, Closed, Declined, Follow-up. A color-blind user can still tell them apart.</p></div>
+            <div class="card"><h3 style="margin-top:0">Forms that guide</h3><p style="font-size:15px">Every field has a visible label and an example, the active field gets a clear outline, and the password can be revealed so mistakes are easy to catch.</p></div>
+            <div class="card"><h3 style="margin-top:0">Readable and reachable</h3><p style="font-size:15px">Dark navy text on light surfaces, generous spacing, and big touch targets. On phones, the navigation pairs each icon with a text label.</p></div>
+          </div>
+        </section>
+
+        <section class="sec" id="cs-next">
+          <h2>Takeaways and next steps</h2>
+          <div class="card" style="margin-bottom:18px">
+            <h3 style="margin-top:0">Impact</h3>
+            <p style="margin:0">Askademic replaces chasing instructors with bookable slots and a recorded outcome for every consultation. Its dashboard already tracks 46 consultation requests across 8 faculty and 5 students, with 14 closed with a recorded outcome.</p>
+          </div>
+          <h3 style="margin-top:0">What I learned</h3>
+          <p>Understand how an organization is structured before designing for it. We built an admin because it was a familiar pattern, but the panel’s question exposed that the real structure was a chain of review: instructor, program chair, then department dean. As project lead and documentation lead, I also learned that keeping the diagrams, the database and the screens in agreement matters as much as the screens themselves.</p>
+          <h3>Next steps</h3>
+          <div class="nxt two">
+            <div><b>Integrate Google Calendar</b><br>Students and instructors already plan their days in Google Calendar. Syncing approved consultations there would save part-time instructors from keeping a second calendar, and it answers the faculty representative’s call for a calendar they already know.</div>
+            <div><b>Deploy across the whole campus</b><br>Every department has the same problem of chasing instructors with no record of what happened. The system already supports roles, program views and school-wide closed dates, so it can grow beyond the CCS department.</div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="strip footstrip" aria-hidden="true"></div>
+</section>
+
+<!-- CASE STUDY: TUGMA -->
+<section class="view cs-view" id="case-study-tugma" aria-label="Tugma case study">
+  <div class="wrap">
+    <header class="cs-head">
+      <div class="eyebrow">case study</div>
+      <h1 class="script">Tugma</h1>
+      <p class="tag">A lost-and-found system where residents report an item, the system suggests likely matches, and barangay staff confirm them.</p>
+    </header>
+    <div class="scene" id="tg-scene" data-scene="tugma" aria-label="Tugma shown on a laptop and a phone">
+      <div class="scene-in">
+        <div class="stage3d">
+          <div class="floor"></div>
+          <div class="laptop"><div class="lid"><i class="cam"></i><div class="scr"><img class="sa" alt="Tugma on a laptop"><img class="sb off" alt=""></div></div><div class="base"></div></div>
+          <div class="phone"><i class="isl"></i><div class="pscr"><img class="pa" alt="Tugma on a phone"></div></div>
+          <div class="appicon a"><img src="assets/img/tugma-logo.png" alt="Tugma app logo"></div>
+          <div class="appicon b"><img src="assets/img/tugma-logo.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+    <div class="tabs scene-tabs" role="tablist" aria-label="Screens shown on the devices">
+      <button class="tab" role="tab" aria-selected="true" data-scr="0" data-for="tugma" type="button">Report form</button>
+      <button class="tab" role="tab" aria-selected="false" data-scr="1" data-for="tugma" type="button">Records</button>
+      <button class="tab" role="tab" aria-selected="false" data-scr="2" data-for="tugma" type="button">Matches</button>
+      <button class="tab" role="tab" aria-selected="false" data-scr="3" data-for="tugma" type="button">Staff sign in</button>
+    </div>
+    <p class="cap">Move your pointer over the devices to tilt them. Pick a tab to change the screen. All reports shown are simulated data from the study.</p>
+
+    <div class="cs-grid">
+      <nav class="toc" aria-label="Tugma case study sections">
+        <a href="#tg-overview" data-t="tg-overview">Overview</a>
+        <a href="#tg-process" data-t="tg-process">Process</a>
+        <a href="#tg-users" data-t="tg-users">Understanding users</a>
+        <a href="#tg-logic" data-t="tg-logic">How matching works</a>
+        <a href="#tg-results" data-t="tg-results">Results</a>
+        <a href="#tg-screens" data-t="tg-screens">Screens</a>
+        <a href="#tg-security" data-t="tg-security">Privacy and security</a>
+        <a href="#tg-next" data-t="tg-next">Takeaways</a>
+      </nav>
+
+      <div>
+        <section class="sec" id="tg-overview">
+          <h2>Overview</h2>
+          <div class="two">
+            <div class="card">
+              <dl class="kv">
+                <dt>The product</dt><dd>Tugma is a web-based lost-and-found system for Barangay Sta. Rita in Olongapo City. Residents report a lost or found item through a form. The system compares every report with the others and ranks likely matches for barangay staff, who check them and confirm the right one.</dd>
+                <dt>Duration</dt><dd>August 2026 to November 2026</dd>
+                <dt>Users</dt><dd>Barangay staff, and residents who lost or found something.</dd>
+              </dl>
+            </div>
+            <div class="card">
+              <h3 style="margin-top:0">The problem</h3>
+              <p>Reports sit in a logbook or a chat thread, and matching is done by eye. A staff member has to remember what was reported weeks ago and hope the descriptions line up.</p>
+              <h3>The goal</h3>
+              <p>Keep every report in one place and rank possible matches by score, so staff check the best candidates first and can see why they were suggested.</p>
+            </div>
+          </div>
+          <div class="card" style="margin-top:20px">
+            <h3 style="margin-top:0">My role</h3>
+            <p style="margin:0 0 6px"><b>Researcher and developer.</b></p>
+            <ul class="tight" style="margin:0"><li>Ran the needs assessment with barangay staff and residents.</li><li>Built and tested the matching logic against a simpler baseline.</li><li>Built the report form, the staff screens and the server behind them.</li></ul>
+          </div>
+          <div class="note" style="margin-top:20px">A fair question for any matching system is “why not use AI?” We chose rules staff can read, because they can see how every score is made up and can trust or overrule it.</div>
+          <h3>What the work covered</h3>
+          <ul class="tight">
+            <li>Needs assessment: a survey of 10 barangay staff and 30 residents.</li>
+            <li>Matching logic: a weighted, rule-based score from 0 to 100.</li>
+            <li>Evaluation: 50 lost and 50 found simulated reports, compared as 2,500 pairs.</li>
+            <li>Interfaces and server: a resident report form and a staff area with sign in.</li>
+            <li>Acceptance: a technology acceptance survey with staff and residents.</li>
+          </ul>
+        </section>
+
+        <section class="sec" id="tg-process">
+          <h2>Process</h2>
+          <p>The project moved through five stages. Pick a stage to see what we did, what we found, and the decisions it led to.</p>
+          <div class="dts" role="tablist" aria-label="Project stages">
+            <button class="dt" role="tab" aria-selected="true" data-dt="0" data-for="tugma" type="button"><i>1</i>Research</button>
+            <button class="dt" role="tab" aria-selected="false" data-dt="1" data-for="tugma" type="button"><i>2</i>Define</button>
+            <button class="dt" role="tab" aria-selected="false" data-dt="2" data-for="tugma" type="button"><i>3</i>Design</button>
+            <button class="dt" role="tab" aria-selected="false" data-dt="3" data-for="tugma" type="button"><i>4</i>Build</button>
+            <button class="dt" role="tab" aria-selected="false" data-dt="4" data-for="tugma" type="button"><i>5</i>Evaluate</button>
+          </div>
+          <div class="card dtp" id="tg-dtp"></div>
+        </section>
+
+        <section class="sec" id="tg-users">
+          <h2>Understanding the users</h2>
+          <h3 style="margin-top:0">What we asked</h3>
+          <p>We started from the assumption that matching lost and found items was slow. To check it, we surveyed 10 barangay staff and 30 residents. The survey asked how reports are recorded, how matches are found, and what each group would want from an online form.</p>
+          <h3>Pain points</h3>
+          <div class="two">
+            <div class="pain"><span class="n">1</span><div><h4>Reports live in different places</h4><p>Nine of 10 staff record reports in a logbook, and one uses Facebook or messaging apps. Staff agreed that matches get missed because reports are in different places or formats. Tugma keeps every report in one list.</p></div></div>
+            <div class="pain"><span class="n">2</span><div><h4>Matching is slow, or not done</h4><p>Six of 10 staff said finding a possible match takes a day or more, and two said matching is not done. Tugma compares a new report with every other report straight away.</p></div></div>
+            <div class="pain"><span class="n">3</span><div><h4>Words are hard to compare</h4><p>All 10 staff rated this 4 or 5: describing an item in words makes it hard to tell whether two reports are about the same thing. Tugma scores each description word by word instead of asking a person to judge it by eye.</p></div></div>
+            <div class="pain"><span class="n">4</span><div><h4>Many residents are left waiting</h4><p>Of the 16 residents who had lost or found an item, seven had no match yet. Staff get a ranked shortlist, so the likeliest match is the first one they check.</p></div></div>
+          </div>
+          <h3>Who it is for</h3>
+          <div class="two">
+            <div class="card"><h3 style="margin-top:0">Barangay staff</h3><p style="font-size:15px;margin:0">They enter and check reports during a busy day. They need a short list of candidates, a reason for each suggestion, and the final say on whether two reports are a match.</p></div>
+            <div class="card"><h3 style="margin-top:0">Residents</h3><p style="font-size:15px;margin:0">They know the item, where they lost it and roughly when. They need a short form they can finish on a phone, and they should not have to know how the matching works.</p></div>
+          </div>
+        </section>
+
+        <section class="sec" id="tg-logic">
+          <h2>How matching works</h2>
+          <p>Every pair of one lost and one found report gets a score from 0 to 100. The score is the sum of five parts, and each part has its own weight.</p>
+          <div class="card">
+            <div class="wts" role="img" aria-label="Weights: category 30, description 30, color 20, location 10, date 10">
+              <div class="w" style="--w:30"><span>Category</span><i></i><b>30</b></div>
+              <div class="w" style="--w:30"><span>Description</span><i></i><b>30</b></div>
+              <div class="w" style="--w:20"><span>Color</span><i></i><b>20</b></div>
+              <div class="w" style="--w:10"><span>Location</span><i></i><b>10</b></div>
+              <div class="w" style="--w:10"><span>Date</span><i></i><b>10</b></div>
+            </div>
+            <p style="margin:14px 0 0;font-size:15px">Scores are grouped into tiers so staff can scan quickly: <b>High</b> from 85, <b>Medium</b> from 70 to 84, and <b>Low</b> below 70. A score of 70 is the cutoff we used when we measured accuracy.</p>
+          </div>
+          <h3>From a baseline to a better version</h3>
+          <p>We first built a simple version (V1) to use as a baseline, then improved it (V2) and measured the difference.</p>
+          <div class="two">
+            <div class="card"><h3 style="margin-top:0"><span class="tagp-i">V1</span> Baseline</h3>
+              <ul class="tight" style="margin:0"><li>Category and color must match exactly.</li><li>The whole description is compared as one string using Levenshtein distance, which counts the edits needed to turn one text into the other.</li><li>A different word order or a Filipino word for the same item lowers the score.</li></ul></div>
+            <div class="card"><h3 style="margin-top:0"><span class="tagf-i">V2</span> Current</h3>
+              <ul class="tight" style="margin:0"><li>Descriptions are compared word by word, and a small typo still counts as the same word.</li><li>English and Filipino words are linked, so “pitaka” and “wallet” are treated as the same item.</li><li>Similar colors are grouped (“navy” counts as “blue”), and a found date cannot come before the lost date.</li></ul></div>
+          </div>
+        </section>
+
+        <section class="sec" id="tg-results">
+          <h2>Results</h2>
+          <p>We used 50 simulated lost reports and 50 simulated found reports, with 35 true pairs, which gives 2,500 possible pairs. We tuned the weights on 40 reports and kept the other 60 as a test set. The numbers below come from that test set at the 70 cutoff.</p>
+          <div class="card">
+            <div class="legend"><span class="k1">V1 baseline</span><span class="k2">V2 current</span></div>
+            <div class="mx"><span>Precision</span><div class="bp"><i class="v1" style="--v:51"></i><b>51%</b></div><div class="bp"><i class="v2" style="--v:79"></i><b>79%</b></div></div>
+            <div class="mx"><span>Recall</span><div class="bp"><i class="v1" style="--v:90"></i><b>90%</b></div><div class="bp"><i class="v2" style="--v:90"></i><b>90%</b></div></div>
+            <div class="mx"><span>F1 score</span><div class="bp"><i class="v1" style="--v:66"></i><b>66%</b></div><div class="bp"><i class="v2" style="--v:84"></i><b>84%</b></div></div>
+          </div>
+          <div class="three" style="margin-top:16px">
+            <div class="card stat"><b>18 → 5</b><span>wrong suggestions (false positives)</span></div>
+            <div class="card stat"><b>17 → 20</b><span>of 21 lost items had the right match ranked first</span></div>
+            <div class="card stat"><b>0.90 → 0.98</b><span>mean reciprocal rank of the true match</span></div>
+          </div>
+          <p style="margin-top:16px">The difference holds up statistically: a Wilcoxon signed-rank test across 30 lost reports gave p = 0.018, with V2 making fewer errors on 10 reports and V1 on 2.</p>
+          <h3>What I would not hide</h3>
+          <div class="two">
+            <div class="card"><h3 style="margin-top:0">Wider pools are harder</h3><p style="font-size:15px;margin:0">When each test lost report is compared with all 50 found reports, V2 precision falls to about 66% and it still makes 10 wrong suggestions. The result above is the cleaner setting, so I report both.</p></div>
+            <div class="card"><h3 style="margin-top:0">Simulated data</h3><p style="font-size:15px;margin:0">The reports were written for the study, so real reports may be messier. Recall did not improve either: V1 and V2 both missed 2 true pairs.</p></div>
+          </div>
+          <h3>Did people accept it?</h3>
+          <p>We used the Technology Acceptance Model on a 5-point scale. Staff rated usefulness 4.64, ease of use 4.40 and intention to use 4.75. Residents rated the system 4.23 overall, with ease of use the lowest of their scores at 3.96, so the resident form is where I would improve first.</p>
+        </section>
+
+        <section class="sec" id="tg-screens">
+          <h2>Screens</h2>
+          <p>Screens from the working system. The reports shown are simulated data from the study. Tap to enlarge.</p>
+          <div class="shots wide">
+            <figure class="shot"><button type="button" data-lb aria-label="Enlarge sign in"><img src="assets/img/t_login.jpg" loading="lazy" alt="Staff sign in screen"></button><figcaption><b>Staff sign in</b>Only signed-in staff can open the records and the matches.</figcaption></figure>
+            <figure class="shot"><button type="button" data-lb aria-label="Enlarge report form"><img src="assets/img/t_report.jpg" loading="lazy" alt="Report form for a lost or found item"></button><figcaption><b>Report an item</b>One form for lost and found, with category, color, description, place and date.</figcaption></figure>
+            <figure class="shot"><button type="button" data-lb aria-label="Enlarge records"><img src="assets/img/t_records.jpg" loading="lazy" alt="Records list with lost and found reports"></button><figcaption><b>Records</b>Every report in one list that staff can filter.</figcaption></figure>
+          </div>
+          <h3>Suggested matches</h3>
+          <p>For any report, staff open a ranked list of candidates with a score, a tier and a breakdown of the five parts. They confirm a match only after checking it themselves.</p>
+          <div class="shots wide">
+            <figure class="shot"><button type="button" data-lb aria-label="Enlarge matches"><img src="assets/img/t_matches.jpg" loading="lazy" alt="Ranked match candidates with scores and tiers"></button><figcaption><b>Ranked candidates</b>The highest score comes first, with a tier chip and a meter for each part.</figcaption></figure>
+          </div>
+          <h3>On a phone</h3>
+          <div class="phones">
+            <figure class="shot"><button type="button" data-lb aria-label="Enlarge phone sign in"><img src="assets/img/tph_login.jpg" loading="lazy" alt="Staff sign in on a phone"></button><figcaption><b>Sign in</b></figcaption></figure>
+            <figure class="shot"><button type="button" data-lb aria-label="Enlarge phone report form"><img src="assets/img/tph_report.jpg" loading="lazy" alt="Report form on a phone"></button><figcaption><b>Report</b></figcaption></figure>
+            <figure class="shot"><button type="button" data-lb aria-label="Enlarge phone records"><img src="assets/img/tph_records.jpg" loading="lazy" alt="Records on a phone"></button><figcaption><b>Records</b></figcaption></figure>
+            <figure class="shot"><button type="button" data-lb aria-label="Enlarge phone matches"><img src="assets/img/tph_matches.jpg" loading="lazy" alt="Matches on a phone"></button><figcaption><b>Matches</b></figcaption></figure>
+          </div>
+        </section>
+
+        <section class="sec" id="tg-security">
+          <h2>Privacy and security</h2>
+          <p>Lost-and-found reports include names and phone numbers, so the way the data is reached mattered as much as the matching.</p>
+          <div class="three">
+            <div class="card"><h3 style="margin-top:0">Staff only</h3><p style="font-size:15px">Names and contact numbers are shown only to signed-in barangay staff. Residents use the report form and never see other people’s reports.</p></div>
+            <div class="card"><h3 style="margin-top:0">Through the server</h3><p style="font-size:15px">The browser talks to a small server on Vercel, and the server talks to the database. The database’s private key stays on the server, and the browser only holds the key used to sign in.</p></div>
+            <div class="card"><h3 style="margin-top:0">Honest about gaps</h3><p style="font-size:15px">Some checks are still on my list, such as stricter database access rules and tests for injection and script attacks. I would finish these before any real deployment.</p></div>
+          </div>
+        </section>
+
+        <section class="sec" id="tg-next">
+          <h2>Takeaways and next steps</h2>
+          <div class="card" style="margin-bottom:18px">
+            <h3 style="margin-top:0">Impact</h3>
+            <p style="margin:0">On the test set, the improved matching raised precision from 51% to 79% and F1 from 66% to 84%, without losing recall. Staff rated the system 4.64 for usefulness.</p>
+          </div>
+          <h3 style="margin-top:0">What I learned</h3>
+          <p>A baseline is what makes an improvement believable. Building the simple version first let me show that the word-by-word rules were better, rather than only claim it. I also learned to report the weaker result next to the good one: the larger pool showed where the system still makes mistakes, and that is more useful than a single clean number.</p>
+          <h3>Next steps</h3>
+          <div class="nxt two">
+            <div><b>Test with real reports</b><br>The study used simulated reports. Running Tugma on real reports from the barangay would show how messy descriptions really are and which synonyms are missing.</div>
+            <div><b>Add photos and tighten security</b><br>A photo would help staff confirm a match, and I would finish the database access rules and the remaining security tests first.</div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="strip footstrip" aria-hidden="true"></div>
+</section>
+
+<!-- CONTACT -->
+<section class="view" id="contact" aria-label="Contact">
+  <div class="cwrap">
+  <svg class="spark" style="left:12%;top:130px;width:30px;height:30px" aria-hidden="true"><use href="#i-spark"/></svg>
+  <svg class="spark" style="right:14%;top:150px;width:26px;height:26px;animation-delay:.8s" aria-hidden="true"><use href="#i-spark"/></svg>
+  <svg class="spark" style="left:6%;top:290px;width:30px;height:30px;animation-delay:1.4s" aria-hidden="true"><use href="#i-spark"/></svg>
+  <svg class="spark" style="right:6%;top:250px;width:24px;height:24px;animation-delay:2s" aria-hidden="true"><use href="#i-spark"/></svg>
+  <svg class="heart" style="right:9%;top:100px;width:32px;height:32px;animation-delay:.4s" aria-hidden="true"><use href="#i-heart"/></svg>
+  <svg class="heart" style="left:20%;top:260px;width:30px;height:30px;animation-delay:1.2s" aria-hidden="true"><use href="#i-heart"/></svg>
+  <svg class="heart" style="right:17%;top:300px;width:26px;height:26px;animation-delay:2.2s" aria-hidden="true"><use href="#i-heart"/></svg>
+  <div class="ct">
+    <h1 class="script">Let’s connect</h1>
+    <p>Open to learning opportunities, collaborations and sharing insights about scientific stuffs!</p>
+    <div class="pills">
+      <a class="pill" href="https://github.com/ricanotrika" target="_blank" rel="noopener"><svg width="26" height="26"><use href="#i-gh"/></svg>GitHub</a>
+      <a class="pill" href="https://www.linkedin.com/in/erica-monton-421482338" target="_blank" rel="noopener"><svg width="26" height="26"><use href="#i-in"/></svg>LinkedIn</a>
+      <button class="pill" type="button" data-copy="ma.ericapm@gmail.com" id="gmailBtn"><svg width="26" height="26"><use href="#i-mail"/></svg><span>Gmail</span></button>
+    </div>
+  </div>
+  <div class="strip" aria-hidden="true"></div>
+  </div>
+  <p class="copyr">&copy; erica monton</p>
+</section>
+
+<div hidden id="shotbank">
+<img data-shot="t_report" src="assets/img/t_report.jpg" alt="">
+<img data-shot="t_records" src="assets/img/t_records.jpg" alt="">
+<img data-shot="t_matches" src="assets/img/t_matches.jpg" alt="">
+<img data-shot="tph_report" src="assets/img/tph_report.jpg" alt="">
+<img data-shot="tph_records" src="assets/img/tph_records.jpg" alt="">
+<img data-shot="tph_matches" src="assets/img/tph_matches.jpg" alt="">
+<img data-shot="t_login" src="assets/img/t_login.jpg" alt="">
+<img data-shot="tph_login" src="assets/img/tph_login.jpg" alt="">
+
+<img data-shot="ph_login_stu" src="assets/img/ph_login_stu.jpg" alt="">
+<img data-shot="ph_welcome" src="assets/img/ph_welcome.jpg" alt="">
+<img data-shot="ph_cal" src="assets/img/ph_cal.jpg" alt="">
+<img data-shot="f_dash_fac" src="assets/img/f_dash_fac.jpg" alt="">
+<img data-shot="persona" src="assets/img/persona.jpg" alt="">
+<img data-shot="persona2" src="assets/img/persona2.jpg" alt="">
+</div>
+<div class="lb" id="lb" hidden role="dialog" aria-label="Enlarged screen"><button type="button" id="lbx">Close</button><img id="lbimg" alt=""></div>
+<div class="toast" id="toast" hidden role="status"></div>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
